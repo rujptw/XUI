@@ -1,0 +1,25 @@
+.xui-click_slider{
+    font-size $font-size-medium
+    .xui__span--normal{
+        cursor pointer
+        border 1px solid $border-color-base
+        padding 6px 5px
+        color $font-common-color
+    }
+    span:nth-child(2){
+        border-left none
+        border-right none
+    }
+    span:nth-child(1){
+        border-radius:4px 0px 0px 4px
+    }
+    span:nth-child(3){
+        border-radius:0px 4px 4px 0px
+    }
+    .xui_span--active{
+         border 1px solid $border-color-active
+         color $font-active-color
+         z-index 3
+         
+    }
+}

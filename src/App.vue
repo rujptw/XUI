@@ -6,11 +6,13 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
-<style>
+<style lang="stylus">
+@import './source/styles/index';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

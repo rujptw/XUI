@@ -1,3 +1,3 @@
-import ClickSlider from './click-slider'
+import ClickSlider from './click-slider.vue'
 
 export default ClickSlider

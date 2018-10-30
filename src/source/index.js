@@ -1,8 +1,11 @@
 // 引入各种组件
 import ClickSlider from './components/click-slider'
+import Button from './components/button'
+
 
 const components = [
-  ClickSlider
+  ClickSlider,
+  Button
 ]
 
 const install = function (Vue) {

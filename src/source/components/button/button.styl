@@ -1,26 +1,51 @@
+$button-height = 42px
+
 .xui__button{
     display: inline-block;
     line-height: 1;
     cursor: pointer;
-    font-size: 16px
-    color: $font-common-color
+    font-size: $font-size-normal
+    color: $font-base-color
     -webkit-appearance: none;
     // 设置盒模型
     box-sizing: border-box
     background:$default-bg
-    border: 1px solid $font-common-color
+    border: 1px solid $border-color-base
     border-image: initial;
     margin: 0px;
     border-radius: $border-radius;
-    padding: 7px 2px;
+    width: 160px
+    height: $button-height
     position: relative; 
     outline: none  
+    font-family: $font-family-base
+    font-weight:$font-weight-normal
 }
-
-.xui__button--default{
-    @extend .xui__button
+// type
+.xui__button--plain{
+    &:hover{
+        border-color: $primary-color
+        color $primary-color
+    }
 }
 .xui__button--activate{
     border-color: $primary-color
-    color: $primary-color
+    color $primary-color
+}
+.xui__button--primary{
+    background $primary-color
+    color $default-bg
+    &:hover{
+     -webkit-box-shadow:1px 1px 3px $primary-color
+     -moz-box-shadow:1px 1px 3px $primary-color;
+     box-shadow:1px 1px 3px $primary-color;
+    }
+}
+.xui__button--normal{
+}
+.xui__button--big{
+    width: 330px
+}
+.xui__button--small{
+    width: 80px
 }

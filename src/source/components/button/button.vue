@@ -2,8 +2,7 @@
  <div >
      <button
         class="xui__button"
-        @click="activeButton"
-        :class="['xui__button--'+ type]"
+        :class="['xui__button--'+ type,'xui__button--'+size]"
      >
     <slot></slot>
      </button>
@@ -18,16 +17,13 @@ export default {
   },
   props: {
     type: {
-      default: "default"
+      default: "plain"
+    },
+    size: {
+      default: "normal"
     }
   },
-  methods: {
-    activeButton() {
-      this.type = "activate";
-    }
-  }
+  methods: {}
 };
 </script>
 
-<style lang="stylus">
-</style>

@@ -1,14 +1,11 @@
 <template>
  <div class="page">
-   <x-click-slider></x-click-slider>
-   <hr>
-   <x-drag-slider></x-drag-slider>
-   <hr>
-   <x-button>近三十日</x-button>
-   <x-button type="primary">160px</x-button>
-   <x-button type="primary" size="big">330px</x-button>
-   <x-button type="primary" size="small">330px</x-button>
-  
+   <p>button统一高度为42px</p>
+   <x-button>width:160px</x-button>
+   <x-button type="primary">width:160px</x-button>
+   <x-button type="primary" size="big">width:330px</x-button>
+   <x-button type="primary" size="small">width:80px</x-button>
+   <img class="x-button" :src="button" alt="">
  </div>
 </template>
 
@@ -16,9 +13,12 @@
 import XClickSlider from "../source/components/click-slider";
 import XDragSlider from "../source/components/drag-slider";
 import XButton from "../source/components/button";
+import button from "imgs/button.png";
 export default {
   data() {
-    return {};
+    return {
+      button
+    };
   },
   props: {},
   components: {

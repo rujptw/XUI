@@ -2,7 +2,7 @@
  <div class="page">
    <p>button统一高度为42px</p>
    <x-button>width:160px</x-button>
-   <x-button type="primary">width:160px</x-button>
+   <x-button type="primary" icon="" @click="change">width:160px</x-button>
    <x-button type="primary" size="big">width:330px</x-button>
    <x-button type="primary" size="small">width:80px</x-button>
    <img class="x-button" :src="button" alt="">
@@ -25,9 +25,11 @@ export default {
     XClickSlider,
     XDragSlider,
     XButton
+  },
+  methods: {
+    change(){
+      console.log(111)
+    }
   }
 };
 </script>
-
-<style lang="stylus">
-</style>

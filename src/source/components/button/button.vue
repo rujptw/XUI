@@ -3,7 +3,10 @@
      <button
         class="xui__button"
         :class="['xui__button--'+ type,'xui__button--'+size]"
+         @click="handleClick"
      >
+
+     <i class ="iconfont icon-loading"></i>
     <slot></slot>
      </button>
  </div>
@@ -17,13 +20,22 @@ export default {
   },
   props: {
     type: {
+      type:String,
       default: "plain"
     },
     size: {
+      type:String,
       default: "normal"
+    },
+    loading:{
+      type:Boolean,
+      default: false
     }
   },
-  methods: {}
+  methods: {
+    handleClick(){
+      this.$emit("click")
+    }
+  }
 };
 </script>
-

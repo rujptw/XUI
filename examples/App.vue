@@ -14,7 +14,7 @@
       <div class="main--left">
         <ul>
           <li v-for="item in navList" :key="item.name">
-            <router-link to="/button">{{item.desc}}</router-link>
+            <router-link :to='item.link'>{{item.desc}}</router-link>
           </li>
         </ul>
       </div>

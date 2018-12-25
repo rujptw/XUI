@@ -46,20 +46,3 @@ export default {
   }
 };
 </script>
-
-<style lang="stylus">
-.icon-loading:before {
-  display: inline-block;
-  animation: rotate 1s linear infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-</style>

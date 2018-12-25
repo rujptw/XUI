@@ -1,8 +1,15 @@
-@keyframes spin{
-  0% {
-      transform: rotate(0deg);
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-      transform: rotate(360deg);
+
+  to {
+    transform: rotate(360deg);
   }
+}
+
+// UPGRATE:icon类名应为组件库的特殊类名
+.icon-loading:before {
+  display: inline-block;
+  animation: rotate 1s linear infinite;
 }

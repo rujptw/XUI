@@ -1,14 +1,14 @@
 <template>
- <div class="xui-drag_slider">
-     <div class="xui__body--normal">
-         <span class="xui__item--normal" v-for="item in options" :key="item.text">{{item.text}}</span>
-     </div>
-     <div class="xui__slider">
-         <span class="xui__slider__item"></span>
-         <span class="xui__slider__item"></span>
-         <span class="xui__slider__item"></span>
-     </div>
- </div>
+  <div class="xui-drag_slider">
+    <div class="xui__body--normal">
+      <span class="xui__item--normal" v-for="item in options" :key="item.text">{{item.text}}</span>
+    </div>
+    <div class="xui__slider">
+      <span class="xui__slider__item"></span>
+      <span class="xui__slider__item"></span>
+      <span class="xui__slider__item"></span>
+    </div>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -44,6 +44,3 @@ export default {
   }
 };
 </script>
-
-<style lang="stylus">
-</style>

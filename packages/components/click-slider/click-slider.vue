@@ -1,7 +1,13 @@
 <template>
- <div class="xui-click_slider">
-    <span class="xui__span--normal"  v-for="(item,index) in arrlist"  :key="index" :class="activIndex===index? 'xui_span--active':''"  @click.prevent="sendTime(item,index)">{{item}}</span>
- </div>
+  <div class="xui-click_slider">
+    <span
+      class="xui__span--normal"
+      v-for="(item,index) in arrlist"
+      :key="index"
+      :class="activIndex===index? 'xui_span--active':''"
+      @click.prevent="sendTime(item,index)"
+    >{{item}}</span>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -25,6 +31,3 @@ export default {
   }
 };
 </script>
-
-<style lang="stylus">
-</style>

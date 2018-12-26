@@ -1,3 +1,6 @@
+/**
+button组件
+*/
 <template>
   <div>
     <button

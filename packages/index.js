@@ -1,11 +1,13 @@
 // 引入各种组件
 import ClickSlider from './components/click-slider'
 import Button from './components/button'
+import DataPanel from './components/data-panel'
 
 
 const components = [
   ClickSlider,
-  Button
+  Button,
+  DataPanel
 ]
 
 const install = function (Vue) {

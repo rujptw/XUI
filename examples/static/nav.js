@@ -1,3 +1,6 @@
+/**
+组件库导航
+*/
 export const navList = [
   {
     name: "button",
@@ -13,5 +16,10 @@ export const navList = [
     name: "date-switcher",
     desc: "日期切换组件",
     link: "/date-switcher"
+  },
+  {
+    name: "show-panel",
+    desc: "展示组件",
+    link: "/show-panel"
   }
 ];

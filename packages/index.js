@@ -3,13 +3,15 @@ import ClickSlider from './components/click-slider'
 import Button from './components/button'
 import DataPanel from './components/data-panel'
 import DateSwitcher from './components/date-switcher'
+import ShowPanel from './components/show-panel'
 
 
 const components = [
   ClickSlider,
   Button,
   DataPanel,
-  DateSwitcher
+  DateSwitcher,
+  ShowPanel,
 ]
 
 const install = function (Vue) {

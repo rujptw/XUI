@@ -5,7 +5,8 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-html 
+html
+  font-family PingFang SC
   line-height 1.15
   -ms-text-size-adjust 100%
   -webkit-text-size-adjust 100%
@@ -14,7 +15,7 @@ html
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body 
+body
   margin 0
 /**
  * Add the correct display in IE 9-.
@@ -24,13 +25,13 @@ aside,
 footer,
 header,
 nav,
-section 
+section
   display block
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 
+h1
   font-size 2em
   margin 0.67em 0
 /* Grouping content
@@ -41,18 +42,18 @@ h1
  */
 figcaption,
 figure,
-main 
+main
   display block
 /**
  * Add the correct margin in IE 8.
  */
-figure 
+figure
   margin 1em 40px
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-hr 
+hr
   -webkit-box-sizing content-box
   box-sizing content-box
   height 0
@@ -61,7 +62,7 @@ hr
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-pre 
+pre
   font-family monospace, monospace
   font-size 1em
 /* Text-level semantics
@@ -70,14 +71,14 @@ pre
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-a 
+a
   background-color transparent
   -webkit-text-decoration-skip objects
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-abbr[title] 
+abbr[title]
   border-bottom none
   text-decoration underline
   -webkit-text-decoration underline dotted
@@ -86,7 +87,7 @@ abbr[title]
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
-strong 
+strong
   font-weight inherit
   font-weight bolder
 /**
@@ -98,38 +99,38 @@ strong
  */
 code,
 kbd,
-samp 
+samp
   font-family monospace, monospace
   font-size 1em
 /**
  * Add the correct font style in Android 4.3-.
  */
-dfn 
+dfn
   font-style italic
 /**
  * Add the correct background and color in IE 9-.
  */
-mark 
+mark
   background-color #ff0
   color #000
 /**
  * Add the correct font size in all browsers.
  */
-small 
+small
   font-size 80%
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
 sub,
-sup 
+sup
   font-size 75%
   line-height 0
   position relative
   vertical-align baseline
-sub 
+sub
   bottom -0.25em
-sup 
+sup
   top -0.5em
 /* Embedded content
    ========================================================================== */
@@ -137,25 +138,25 @@ sup
  * Add the correct display in IE 9-.
  */
 audio,
-video 
+video
   display inline-block
 /**
  * Add the correct display in iOS 4-7.
  */
-audio 
-  &:not([controls]) 
+audio
+  &:not([controls])
     display none
     height 0
 /**
  * Remove the border on images inside links in IE 10-.
  */
-img 
+img
   border-style none
 /**
  * Hide the overflow in IE.
  */
-svg 
-  &:not(:root) 
+svg
+  &:not(:root)
     overflow hidden
 /* Forms
    ========================================================================== */
@@ -167,7 +168,7 @@ button,
 input,
 optgroup,
 select,
-textarea 
+textarea
   font-family sans-serif
   font-size 100%
   line-height 1.15
@@ -177,14 +178,14 @@ textarea
  * 1. Show the overflow in Edge.
  */
 button,
-input 
+input
   overflow visible
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select 
+select
   text-transform none
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -194,7 +195,7 @@ select
 button,
 html [type="button"],
 [type="reset"],
-[type="submit"] 
+[type="submit"]
   -webkit-appearance button
 /**
  * Remove the inner border and padding in Firefox.
@@ -202,7 +203,7 @@ html [type="button"],
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner 
+[type="submit"]::-moz-focus-inner
   border-style none
   padding 0
 /**
@@ -211,12 +212,12 @@ button::-moz-focus-inner,
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring 
+[type="submit"]:-moz-focusring
   outline 1px dotted ButtonText
 /**
  * Correct the padding in Firefox.
  */
-fieldset 
+fieldset
   padding 0.35em 0.75em 0.625em
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -224,7 +225,7 @@ fieldset
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-legend 
+legend
   -webkit-box-sizing border-box
   box-sizing border-box
   color inherit
@@ -236,20 +237,20 @@ legend
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-progress 
+progress
   display inline-block
   vertical-align baseline
 /**
  * Remove the default vertical scrollbar in IE.
  */
-textarea 
+textarea
   overflow auto
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
 [type="checkbox"],
-[type="radio"] 
+[type="radio"]
   -webkit-box-sizing border-box
   box-sizing border-box
   padding 0
@@ -257,26 +258,26 @@ textarea
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button 
+[type="number"]::-webkit-outer-spin-button
   height auto
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] 
+[type="search"]
   -webkit-appearance textfield
   outline-offset -2px
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration 
+[type="search"]::-webkit-search-decoration
   -webkit-appearance none
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-::-webkit-file-upload-button 
+::-webkit-file-upload-button
   -webkit-appearance button
   font inherit
 /* Interactive
@@ -286,31 +287,31 @@ textarea
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 details,
-menu 
+menu
   display block
 /*
  * Add the correct display in all browsers.
  */
-summary 
+summary
   display list-item
 /* Scripting
    ========================================================================== */
 /**
  * Add the correct display in IE 9-.
  */
-canvas 
+canvas
   display inline-block
 /**
  * Add the correct display in IE.
  */
-template 
+template
   display none
 /* Hidden
    ========================================================================== */
 /**
  * Add the correct display in IE 10-.
  */
-[hidden] 
+[hidden]
   display none
 /*# sourceMappingURL=normalize.css.map */
 

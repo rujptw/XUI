@@ -17,9 +17,9 @@
 
 <x-button disabled >禁用按钮</x-button>
 
-<x-button icon="icon-loading">图标按钮</x-button>
+<x-button icon="icon-x-loading">图标按钮</x-button>
 
-<x-button icon="icon-sousuo">图标按钮</x-button>
+<x-button icon="icon-x-sousuo">图标按钮</x-button>
 
 
 ```

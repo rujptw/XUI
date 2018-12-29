@@ -1,9 +1,12 @@
+/**‘
+日期切换组件
+*/
 <template>
   <div class="xui-date-switcher">
     <!--左侧按钮-->
     <div class="common-btn" @click="prevMonth">
       <i
-        class="iconfont icon-arrow_left"
+        class="iconfont icon-x-arrow_left"
         :class="{disable:parseInt(beginTime)<parseInt(switchTime)}"
       ></i>
     </div>
@@ -12,7 +15,7 @@
     <!--右侧按钮-->
     <div class="common-btn" @click="nextMonth">
       <i
-        class="iconfont icon-arrow_right"
+        class="iconfont icon-x-arrow_right"
         :class="{disable:parseInt(beginTime)<=parseInt(switchTime)}"
       ></i>
     </div>

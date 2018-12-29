@@ -1,4 +1,5 @@
-@keyframes rotate {
+// 搜索转圈
+@keyframes x-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -8,8 +9,8 @@
   }
 }
 
-// UPGRATE:icon类名应为组件库的特殊类名
-.icon-loading:before {
+// UPGRATE:icon类名应为本地
+.icon-x-loading:before {
   display: inline-block;
-  animation: rotate 1s linear infinite;
+  animation: x-rotate 1s linear infinite;
 }

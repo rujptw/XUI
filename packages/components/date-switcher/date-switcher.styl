@@ -1,12 +1,11 @@
-$mBackground = #fff
-commonBtn(){
+XcommonBtn(){
     display: inline-block;
     vertical-align: middle;
     // 清除点击蓝条
     user-select none
 }
-iconArrow(){
-        background: $mBackground;
+XiconArrow(){
+        background: #fff;
         border: 1px solid #d9d9d9;
         border-radius: 4px;
         color: #d9d9d9;
@@ -16,16 +15,16 @@ iconArrow(){
         padding-top: 3px;
         margin-right: 10px;
 }
-hoverAble(){
+XhoverAble(){
     cursor: pointer;
     background #d9d9d9
     color:#fff
 }
-hoverDisable(){
-    background: $mBackground;
+XhoverDisable(){
+    background: #fff;
     color: #d9d9d9;
 }
-monthContainer(){
+XmonthContainer(){
     display: inline-block;
     color: #666;
 }
@@ -35,43 +34,42 @@ monthContainer(){
     overflow: hidden;
 
     .common-btn {
-        commonBtn();
+        XcommonBtn();
 
-        .icon-arrow_left {
-            iconArrow();
+        .icon-x-arrow_left {
+            XiconArrow();
             float: left;
         }
-        .icon-arrow_left:before {
+        .icon-x-arrow_left:before {
                 vertical-align: middle;
         }
-        .icon-arrow_left:hover {
-            hoverAble();
+        .icon-x-arrow_left:hover {
+            XhoverAble();
         }
-        .icon-arrow_right {
-            iconArrow();
+        .icon-x-arrow_right {
+            XiconArrow();
             margin-right: 0px;
             margin-left: 12px;
             float: right;
 
         }
-         .icon-arrow_right:before {
+         .icon-x-arrow_right:before {
             vertical-align: middle;
         }
-        .icon-arrow_right:hover {
-            hoverAble();
+        .icon-x-arrow_right:hover {
+            XhoverAble();
         }
 
 
         .disable:hover {
             cursor: not-allowed;
-            hoverDisable();
+            XhoverDisable();
         }
-
         .disable {
-            hoverDisable();
+            XhoverDisable();
         }
     }
     .month-container {
-        monthContainer();
+        XmonthContainer();
     }
 }

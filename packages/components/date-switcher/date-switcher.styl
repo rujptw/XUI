@@ -1,0 +1,77 @@
+$mBackground = #fff
+commonBtn(){
+    display: inline-block;
+    vertical-align: middle;
+    // 清除点击蓝条
+    user-select none
+}
+iconArrow(){
+        background: $mBackground;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        color: #d9d9d9;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        padding-top: 3px;
+        margin-right: 10px;
+}
+hoverAble(){
+    cursor: pointer;
+    background #d9d9d9
+    color:#fff
+}
+hoverDisable(){
+    background: $mBackground;
+    color: #d9d9d9;
+}
+monthContainer(){
+    display: inline-block;
+    color: #666;
+}
+.xui-date-switcher {
+    font-size: 20px;
+    float: left;
+    overflow: hidden;
+
+    .common-btn {
+        commonBtn();
+
+        .icon-arrow_left {
+            iconArrow();
+            float: left;
+        }
+        .icon-arrow_left:before {
+                vertical-align: middle;
+        }
+        .icon-arrow_left:hover {
+            hoverAble();
+        }
+        .icon-arrow_right {
+            iconArrow();
+            margin-right: 0px;
+            margin-left: 12px;
+            float: right;
+
+        }
+         .icon-arrow_right:before {
+            vertical-align: middle;
+        }
+        .icon-arrow_right:hover {
+            hoverAble();
+        }
+
+
+        .disable:hover {
+            cursor: not-allowed;
+            hoverDisable();
+        }
+
+        .disable {
+            hoverDisable();
+        }
+    }
+    .month-container {
+        monthContainer();
+    }
+}

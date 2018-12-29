@@ -94,7 +94,8 @@ export default {
     flex-wrap: wrap;
 
     div {
-      margin: 10px 10px 0px 0px;
+      // FIXME:文档样式需要调整
+      //  margin: 10px 10px 0px 0px;
     }
   }
 }

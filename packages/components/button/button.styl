@@ -1,19 +1,18 @@
 $button-height = 42px
 $box-shadow =1px 1px 3px $primary-color;
-
-$no-box-shadow =  0px 0px 0px $font-base-color
+$no-box-shadow =  0px 0px 0px $font-base-colord
 
 .xui__button{
     display: inline-block;
     line-height: 1;
     cursor: pointer;
     font-size: $font-size-normal
-    color: $font-base-color
+    color: $font-base-color6
     -webkit-appearance: none;
     // 设置盒模型
     box-sizing: border-box
     background:$default-bg
-    border: 1px solid $border-color-base
+    border: 1px solid $font-base-colord
     border-image: initial;
     margin: 0px;
     border-radius: $border-radius;
@@ -37,10 +36,9 @@ $no-box-shadow =  0px 0px 0px $font-base-color
 }
 .xui__button--plain:disabled{
     &:hover{
-        border-color: $border-color-base
-        color $font-base-color
-        box-shadow: $no-box-shadow
-
+        border-color: $font-base-colord!important
+        color $font-base-color6!important
+        box-shadow: $no-box-shadow!important
     }
 }
 
@@ -53,7 +51,9 @@ $no-box-shadow =  0px 0px 0px $font-base-color
 }
 .xui__button--primary:disabled{
     &:hover{
-        box-shadow: $no-box-shadow
+        border-color: $font-base-colord!important
+        color $font-base-color6!important
+        box-shadow: $no-box-shadow!important
     }
 }
 
@@ -68,4 +68,5 @@ $no-box-shadow =  0px 0px 0px $font-base-color
 }
 .is-disabled{
     opacity 0.3
+    cursor not-allowed
 }

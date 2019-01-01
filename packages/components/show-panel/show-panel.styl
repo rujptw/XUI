@@ -1,16 +1,39 @@
 .xui__show-panel{
     //TODO:展示面板的宽度需要重新定义
-    width: 500px
+    width: 1200px
     text-align: center
     .xui__show-panel--title{
+
         color $font-base-color3
         font-size:26px
         font-weight: $font-weight-bold
         margin-bottom: 80px
     }
    .xui__show-panel--list{
+       overflow: hidden;
+       margin-left: 135px
+       .item:last-child{
+           margin-right: 0px
+        }
        .item{
-
+           float: left;
+           text-align: center
+           margin-right: 148px
+           .img{
+            width: 120px
+            height:  120px
+            display: inline-block;
+            }
+            .title{
+                margin: 16px 0px
+                color:$font-base-color3
+                font-size: $font-size-big
+                font-weight: $font-weight-bold
+            }
+            .desc{
+                color: $font-base-color6
+                font-size: $font-size-normal
+            }
        }
 
     }

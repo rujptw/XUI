@@ -266,17 +266,17 @@ body {
 }
 
 .markdown ul > li {
-  list-style-type: circle;
-  margin-left: 20px;
-  padding-left: 4px;
-  padding-top: 15px;
+  list-style-type: none;
+  // margin-left: 20px;
+  // padding-left: 4px;
+  // padding-top: 15px;
 }
 
 .markdown ol > li {
-  list-style-type: decimal;
-  margin-left: 20px;
-  padding-left: 4px;
-  padding-top: 15px;
+  list-style-type: none;
+  // margin-left: 20px;
+  // padding-left: 4px;
+  // padding-top: 15px;
 }
 
 .markdown > table {

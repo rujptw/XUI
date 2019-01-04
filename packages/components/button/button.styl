@@ -1,68 +1,76 @@
-.xui__button{
-    display: inline-block;
-    line-height: 1;
-    cursor: pointer;
-    font-size: $font-size-normal
-    color: $font-base-color6
-    -webkit-appearance: none;
-    // 设置盒模型
-    box-sizing: border-box
-    background:$default-bg
-    border: 1px solid $font-base-colord
-    border-image: initial;
-    margin: 0px;
-    border-radius: $border-radius;
-    height:  42px
-    position: relative;
-    outline: none
-    font-family: $font-family-base
-    font-weight:$font-weight-normal
-    .xui__button-icon{
-        position absolute;
-        right 5px
-    }
+.xui__button {
+	display: inline-block;
+	line-height: 1;
+	cursor: pointer;
+	font-size: $font-size-normal;
+	color: $font-base-color6;
+	-webkit-appearance: none;
+	// 设置盒模型
+	box-sizing: border-box;
+	background: $default-bg;
+	border: 1px solid $font-base-colord;
+	border-image: initial;
+	margin: 0px;
+	border-radius: $border-radius;
+	height: 42px;
+	position: relative;
+	outline: none;
+	font-family: $font-family-base;
+	font-weight: $font-weight-normal;
+
+	.xui__button-icon {
+		position: absolute;
+		right: 5px;
+	}
 }
+
 // type
-.xui__button--plain{
-    &:hover{
-        border-color: $primary-color
-        color $primary-color
-        box-shadow:$box-shadow
-    }
-}
-.xui__button--plain:disabled{
-    &:hover{
-        border-color: $font-base-colord!important
-        color $font-base-color6!important
-        box-shadow: $no-box-shadow!important
-    }
+.xui__button--plain {
+	&:hover {
+		border-color: $primary-color;
+		color: $primary-color;
+		box-shadow: $box-shadow;
+	}
 }
 
-.xui__button--primary{
-    background $primary-color
-    color $default-bg
-    &:hover{
-        box-shadow:$box-shadow
-    }
-}
-.xui__button--primary:disabled{
-    &:hover{
-        border-color: $font-base-colord!important
-        color $font-base-color6!important
-        box-shadow: $no-box-shadow!important
-    }
+.xui__button--plain:disabled {
+	&:hover {
+		border-color: $font-base-colord !important;
+		color: $font-base-color6 !important;
+		box-shadow: $no-box-shadow !important;
+	}
 }
 
-.xui__button--big{
-    width: 330px
+.xui__button--primary {
+	background: $primary-color;
+	color: $default-bg;
+
+	&:hover {
+		box-shadow: $box-shadow;
+	}
 }
-.xui__button--small{
-    width: 80px
+
+.xui__button--primary:disabled {
+	&:hover {
+		border-color: $font-base-colord !important;
+		color: $font-base-color6 !important;
+		box-shadow: $no-box-shadow !important;
+	}
 }
-.xui__button--normal{
-    width: 160px
+
+.xui__button--big {
+	width: 330px;
 }
-.is-disabled{
-    opacity 0.3
-    cursor not-allowed
+
+.xui__button--small {
+	width: 80px;
+}
+
+.xui__button--normal {
+	width: 160px;
+}
+
+.is-disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
 }

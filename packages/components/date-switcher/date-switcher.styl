@@ -1,75 +1,85 @@
-XcommonBtn(){
-    display: inline-block;
-    vertical-align: middle;
-    // 清除点击蓝条
-    user-select none
+XcommonBtn() {
+	display: inline-block;
+	vertical-align: middle;
+	// 清除点击蓝条
+	user-select: none;
 }
-XiconArrow(){
-        background: #fff;
-        border: 1px solid #d9d9d9;
-        border-radius: 4px;
-        color: #d9d9d9;
-        width: 28px;
-        height: 28px;
-        text-align: center;
-        padding-top: 3px;
-        margin-right: 10px;
+
+XiconArrow() {
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	color: #d9d9d9;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	padding-top: 3px;
+	margin-right: 10px;
 }
-XhoverAble(){
-    cursor: pointer;
-    background #d9d9d9
-    color:#fff
+
+XhoverAble() {
+	cursor: pointer;
+	background: #d9d9d9;
+	color: #fff;
 }
-XhoverDisable(){
-    background: #fff;
-    color: #d9d9d9;
+
+XhoverDisable() {
+	background: #fff;
+	color: #d9d9d9;
 }
-XmonthContainer(){
-    display: inline-block;
-    color: #666;
+
+XmonthContainer() {
+	display: inline-block;
+	color: #666;
 }
+
 .xui-date-switcher {
-    font-size: 20px;
-    float: left;
-    overflow: hidden;
+	font-size: 20px;
+	float: left;
+	overflow: hidden;
 
-    .common-btn {
-        XcommonBtn();
+	.common-btn {
+		XcommonBtn();
 
-        .icon-x-arrow_left {
-            XiconArrow();
-            float: left;
-        }
-        .icon-x-arrow_left:before {
-                vertical-align: middle;
-        }
-        .icon-x-arrow_left:hover {
-            XhoverAble();
-        }
-        .icon-x-arrow_right {
-            XiconArrow();
-            margin-right: 0px;
-            margin-left: 12px;
-            float: right;
+		.icon-x-arrow_left {
+			XiconArrow();
+			float: left;
+		}
 
-        }
-         .icon-x-arrow_right:before {
-            vertical-align: middle;
-        }
-        .icon-x-arrow_right:hover {
-            XhoverAble();
-        }
+		.icon-x-arrow_left:before {
+			vertical-align: middle;
+		}
 
+		.icon-x-arrow_left:hover {
+			XhoverAble();
+		}
 
-        .disable:hover {
-            cursor: not-allowed;
-            XhoverDisable();
-        }
-        .disable {
-            XhoverDisable();
-        }
-    }
-    .month-container {
-        XmonthContainer();
-    }
+		.icon-x-arrow_right {
+			XiconArrow();
+			margin-right: 0px;
+			margin-left: 12px;
+			float: right;
+		}
+
+		.icon-x-arrow_right:before {
+			vertical-align: middle;
+		}
+
+		.icon-x-arrow_right:hover {
+			XhoverAble();
+		}
+
+		.disable:hover {
+			cursor: not-allowed;
+			XhoverDisable();
+		}
+
+		.disable {
+			XhoverDisable();
+		}
+	}
+
+	.month-container {
+		XmonthContainer();
+	}
 }

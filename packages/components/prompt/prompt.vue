@@ -1,9 +1,12 @@
 /** 提示框 */
 <template>
-	<transition name="prompt-transition">
-		<div class="xui__prompt">
-			<h4 class="title">{{ title }}</h4>
-			<div class="desc" v-html="desc"></div>
+	<transition name="prompt">
+		<div class="xui__prompt--wrapper" v-if="show">
+			<div class="item">
+				<h4 class="title">{{ title }}</h4>
+				<p class="desc" v-html="desc"></p>
+				<span class="close" @click="closePrompt">×</span>
+			</div>
 		</div>
 	</transition>
 </template>
@@ -12,36 +15,54 @@
 	export default {
 		name: 'XPrompt',
 		props: {
-			title: {
-				type: String,
-				default: "标题"
-			},
-			desc: {
-				type: String,
-				default: "<span>这是描述,这是描述,这是描述,这是描述,这是描述,这是描述,这是描述,这是描述,这是描述,这是描述</span>"
-			},
-			duration: {
-				type: Number,
-				default: 500
-			},
-			offset: {
-				type: Number
-			},
-			showClose: {
-				type: Boolean,
-				default: true,
-			}
 		},
 		data() {
+			//默认值
 			return {
-
+				show:false,
+				duration:3000,
+				timer:null,
+				closed:false,//弹窗是否关闭
 			}
 		},
-		components: {
-
+		mounted() {
+			this.startTimer()
 		},
-		mounted() {},
-		methods: {},
+		beforeDestroy() {
+			this.stopTimer()
+		},
+		watch:{
+			closed:function(val){
+				if(val){
+					this.show = false;
+					this.$el.addEventListener('animationend',this.destoryElement)
+				}
+			}
+		},
+		methods: {
+			startTimer(){
+				this.timer = setTimeout(()=>
+				{
+					this.show= false;
+				},this.duration)
+			},
+			closePrompt(){
+				this.closed = true;
+				if(typeof this.onClose === 'function'){
+					this.onClose(this)
+				}
+			},
+			stopTimer(){
+				if(this.timer){
+					clearTimeout(this.timer)
+				}
+			},
+			destoryElement(){
+				this.$el.removeEventListener('animationend',this.destoryElement)
+				this.$destory(this);
+				this.$el.parentNode.removeChild(this.$el)
+			}
+		},
 		computed: {}
 	}
 </script>

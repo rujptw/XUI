@@ -40,8 +40,9 @@
 			}
 		},
 		methods: {
-			handleClick() {
-				this.$emit("click");
+			//需要传递event对象做火狐的兼容
+			handleClick(event) {
+				this.$emit("click",event);
 			}
 		}
 	};

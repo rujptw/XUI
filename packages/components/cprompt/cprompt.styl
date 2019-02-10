@@ -1,0 +1,94 @@
+.xui__cprompt--wrapper {
+	overfllow: hidden;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+
+	.item {
+		width: 336px;
+		height: 136px;
+		padding: 40px;
+		background: #fff;
+		border: 1px solid grey;
+		border-radius: 2px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.title {
+		text-align: left;
+		font-size: $font-size-normal;
+		color: $font-base-color3;
+		font-weight: $font-weight-bold;
+		margin-bottom: 4px;
+
+		.icon-x-warn {
+			font-size: 16px;
+		}
+	}
+
+	.desc {
+		text-align: left;
+		font-size: $font-size-small;
+		color: $font-base-color6;
+		margin-bottom: 44px;
+	}
+
+	.btn-group {
+		overflow: hidden;
+
+		div {
+			display: inline-block;
+			float: right;
+			margin-right: 16px;
+		}
+	}
+
+	.close {
+		font-size: 20px;
+		position: absolute;
+		top: 0;
+		right: 5px;
+		cursor: pointer;
+	}
+}
+
+.cprompt-enter-active {
+	animation: cprompt-fade-in 0.3s;
+}
+
+.cprompt-leave-active {
+	animation: cprompt-fade-out 0.3s;
+}
+
+@keyframes cprompt-fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes cprompt-fade-out {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

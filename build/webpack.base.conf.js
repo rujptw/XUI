@@ -12,7 +12,7 @@ function resolve(dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: ['babel-polyfill', './examples/main.js']
+    app: process.env.NODE_ENV === 'production' ? './packages/index.js' : './examples/main.js'
   },
   output: {
     path: config.build.assetsRoot,

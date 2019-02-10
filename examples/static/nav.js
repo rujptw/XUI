@@ -26,5 +26,10 @@ export const navList = [
 		name: "prompt",
 		desc: "信息提示组件",
 		link: "/prompt"
+	},
+	{
+		name: "cprompt",
+		desc: "确认框组件",
+		link: "/cprompt"
 	}
 ];
